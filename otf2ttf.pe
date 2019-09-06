@@ -1,0 +1,19 @@
+#!/usr/local/bin/fontforge
+
+# convert a font (or list of fonts) to truetype
+# can be run as a fontforge script and/or chmod +x
+
+if ( $argc==1 )
+  Print("usage: fontforge -script otf2ttf.pe FONT.otf")  
+else
+  i=1
+  while ( i<$argc )
+    in=$argv[i]
+    Print("Opening "+in);
+    Open(in);
+    Print("Saving "+in:r+".ttf");
+    Generate(in:r+".ttf");
+    i = i+1
+  endloop
+endif
+Quit(0); 
