@@ -1,6 +1,6 @@
 # otf2ttf
 
-This script can convert fonts in OTF (or any other format fontforge can read) format to TTF. 
+This script can convert fonts in OTF format (or any other format fontforge can read) into TTF. 
 
 It requires [fontforge](https://fontforge.github.io/) to be installed. `otf2ttf` can be used either as a fontforge script (extended or in combination with others) or as an executable (run `chmod a+x otf2ttf` and ensure it's somewhere $PATH like). It will convert one or more fonts into TTF files in the current directory.
 
